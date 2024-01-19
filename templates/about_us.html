@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock title %}
+{% block body %}
+    <style>
+        .about_us{
+            padding:100px;
+        }
+        .about_us h2{
+            color: black;
+            font-size:30px;
+            font-family: cosmic, sans-serif;
+            padding:5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .about_us p{
+            color: black;
+            font-size:15px;
+            font-family: cosmic, sans-serif;
+            padding:5px;
+            text-align: center;
+            line-height: 20px;
+        
+        }
+        
+        .feed{
+            padding: 50px;
+            background-image: url('review.jpg');
+            background-size: cover;
+        
+        }
+        .feed h2{
+            color: black;
+            font-size:50px;
+            font-family: cosmic, sans-serif;
+            padding:5px;
+            text-align: center;
+        }
+        .feed .feed_form{
+            text-align: center;
+        }
+        .feed .feed_form form{
+            padding:20px;
+        
+        }
+        .feed .feed_form form input{
+            width:30%;
+            margin: 10px;
+            padding:7px;
+            outline: none;
+            border:none;
+        }
+        .feed .feed_form form textarea{
+            width:30%;
+            margin: 10px;
+            padding:7px;
+            outline: none;
+            border:none;
+        }
+        .feed .feed_form form button{
+            width:30%;
+            margin: 10px;
+            padding:7px;
+            outline: none;
+            border:none;
+            text-decoration: none;
+            color:wheat;
+            font-size:15px;
+            font-family:cosmic, sans-serif;
+            background-color: brown;
+            border-radius: 5px;
+        
+        }
+        .feed .feed_form form button:hover{
+            color:white;
+            background-color: black;
+            transition: ease;
+        }
+    </style>
+    
+    
+    
+    <div class="about_us">
+        <h2>About Us</h2>
+        <div class="about_content">
+           <p>ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores
+                Lorem iLorempsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis asperiores</p>
+                   
+    
+        </div>
+        <hr>
+        <div class="our_mission">
+            <h2>OUR MISSION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure perspiciatis ipsa disti
+                nctio ratione vero facilis, aliquam adipisci. Alias laboriosam nostrum dolore beatae fug
+                iat. Quod molestiae, officia nesciunt delectus dolorum quidem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente provident laboriosam a con
+            sequatur maiores, laborum nisi porro nesciunt temporibus voluptatem cum quis laudantium quam ipsu
+            m officiis, sequi neque nulla.</p>
+    
+        </div>
+    </div>
+    
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="Submit google-sheets" method="post">
+                <input type="text" name="Name" placeholder="Text"><br>
+                <input type="Email" name="Email" placeholder="email"><br>
+                <input type="Number" name="Number" placeholder="Number"><br>
+                <textarea rows="7" cols="7" name="Review" placeholder="Write Your Review"></textarea><br>
+                <button type="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    {% endblock body %}
+
